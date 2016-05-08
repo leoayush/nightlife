@@ -95,7 +95,7 @@ var auth = function(req, res, next){
 
 var app = express();
 
-mongoose.connect(process.env.MONGODB_URI || process.env.MONGODB_URI);
+mongoose.connect(process.env.MONGODB_URI || process.env.MONGO_URI);
 
 // all environments
 app.set('port', process.env.PORT || 3000);
